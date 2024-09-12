@@ -9,6 +9,9 @@ metadata:
     - backend
     - node
     - express
+    - ai
+    - test
+  namespace: others
   links:
     - url: https://github.com/piotrpasich/test2
       title: GitHub Repository
