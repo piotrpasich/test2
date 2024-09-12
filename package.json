@@ -1,0 +1,44 @@
+{
+  "name": "testy",
+  "version": "0.1.0",
+  "description": "test2",
+  "main": "index.js",
+  "engines": {
+    "node": "18 || 20"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "start:watch": "nodemon --inspect=0.0.0.0 --ext js --legacy-watch index.js",
+    "start:debug": "nodemon --inspect-brk=0.0.0.0 --ext js --legacy-watch index.js",
+    "lint:all": "npx eslint ."
+  },
+  "contributors": [],
+  "dependencies": {
+    "eslint": "^9.2.0",
+    "express": "^4.19.2",
+    "husky": "^9.0.11",
+    "lerna": "^8.1.2",
+    "node-gyp": "^10.1.0",
+    "prettier": "^3.2.5"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.2.0",
+    "eslint": "^9.2.0",
+    "nodemon": "3.1.0",
+    "prettier": "^3.2.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint:all"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,mjs,cjs}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,md}": [
+      "prettier --write"
+    ]
+  }
+}
