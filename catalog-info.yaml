@@ -1,7 +1,7 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: Intrepid - Android
+  name: Intrepid-Android
   description: Android-specific module within the Intrepid monorepo. It provides immersive news stories, audio content, and short videos using GraphQL via the Android operating system.
   annotations:
     backstage.io/source-location: url:https://github.com/newscorp-ghfb/intrepid/tree/develop/apps/android/
