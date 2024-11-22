@@ -1,20 +1,24 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: Intrepid-iOS
-  description: iOS-specific module within the Intrepid monorepo. It provide immersive news stories, audio content, and short videos using GraphQL via the iOS operating system.
-  annotations:
-    backstage.io/source-location: url:https://github.com/newscorp-ghfb/intrepid/tree/develop/apps/ios/
-    backstage.io/techdocs-ref: dir:.
-    bitrise.io/app: intrepid
+  name: test2
+  description: test2
   tags:
-    - ios
-    - swift
-    - media
-    - graphql
+    - typescript
+    - backstage
+    - backend
+    - node
+    - express
+    - ai
+    - test
+  namespace: others
+  links:
+    - url: https://github.com/piotrpasich/test2
+      title: GitHub Repository
+      icon: github
+  annotations:
+    backstage.io/source-location: url:https://github.com/piotrpasich/test2
 spec:
-  type: application
+  type: backend
   lifecycle: development
-  owner: user:nahuel.proietto
-  dependsOn:
-    - component:default/intrepid
+  owner: "group:default/global-technology"
