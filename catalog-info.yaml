@@ -1,20 +1,20 @@
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-  name: Intrepid-Android
-  description: Android-specific module within the Intrepid monorepo. It provides immersive news stories, audio content, and short videos using GraphQL via the Android operating system.
+  name: Intrepid-iOS
+  description: iOS-specific module within the Intrepid monorepo. It provide immersive news stories, audio content, and short videos using GraphQL via the iOS operating system.
   annotations:
-    backstage.io/source-location: url:https://github.com/newscorp-ghfb/intrepid/tree/develop/apps/android/
+    backstage.io/source-location: url:https://github.com/newscorp-ghfb/intrepid/tree/develop/apps/ios/
     backstage.io/techdocs-ref: dir:.
     bitrise.io/app: intrepid
   tags:
-    - android
-    - kotlin
+    - ios
+    - swift
     - media
     - graphql
 spec:
   type: application
   lifecycle: development
-  owner: user:adria.moreno
+  owner: user:nahuel.proietto
   dependsOn:
     - component:default/intrepid
